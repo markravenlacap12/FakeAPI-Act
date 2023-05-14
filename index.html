@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <h2 class="mb-4">Student List</h2>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="student-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Student Form</h2>
+                <form id="student-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" name="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <select class="form-control" id="course" name="course" required>
+                            <option value="">Select a course</option>
+                            <option value="BSBA">BSBA</option>
+                            <option value="BSED">BSED</option>
+                            <option value="BSTM">BSTM</option>
+                            <option value="BSIT">BSIT</option>
+                            <option value="BSHM">BSHM</option>
+                            <option value="BSA">BSA</option>
+                            <option value="BSBA">BSBA</option>
+                            <option value="BSCRIM">BSCRIM</option>
+                            <option value="BEED">BEED</option>
+                            <option value="PolSci">PolSci</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
     
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
